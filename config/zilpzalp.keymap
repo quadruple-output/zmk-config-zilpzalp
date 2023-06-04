@@ -329,8 +329,8 @@
                 &kp F12        &kp F4         &kp F5         &kp F6             &kp F11             &sk RC(RA(RCMD))    &hr RALT C_PREV    &hr RCMD C_PP    &kp C_NEXT    &my_menu
                 //
                                &kp F1         &kp F2         &kp F3                                                     &kp      C_BRI_DN  &kp      RCTRL   &kp C_BRI_UP
-                //                                           with BetterTouchTool, map F20 to Left Mouse Button; F21 to Right Mouse Button
-                                                             &hl LSHFT F20      &kp F21             &kp F20             &hr RSHFT F21
+                //                                           with BetterTouchTool, map F16 to Left Mouse Button; F17 to Right Mouse Button
+                                                             &hl LSHFT F16      &kp F17             &kp F16             &hr RSHFT F17
             >;
         };
 
