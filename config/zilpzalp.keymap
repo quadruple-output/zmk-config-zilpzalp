@@ -190,8 +190,8 @@
             bindings = <&caps_word>;
             timeout-ms = <COMBO_TIMEOUT_LONG>;
         };
-    };
 */
+    };
 };
 
 
