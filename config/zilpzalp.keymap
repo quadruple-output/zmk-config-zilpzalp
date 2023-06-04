@@ -17,6 +17,8 @@
 #define DE_Z Y
 #define DE_MINUS SLASH
 #define DE_UNDER LS(SLASH)
+#define DE_HASH BACKSLASH
+#define DE_SINGLE_QUOTE LS(DE_HASH)
 
 // &lt {
 //     quick_tap_ms = <170>;
@@ -112,7 +114,7 @@
         // Special Characters on NEO3:
         combo_hash {
             key-positions = <18 19>;
-            bindings = <&kp HASH>;
+            bindings = <&kp DE_HASH>;
             layers = <NEO3>;
             timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
@@ -293,12 +295,12 @@
         neo_layer_3 {
             label = "NEO3";
             bindings = <
-                //
+                //                 …              [              ]                  ^                   !                   <                  >               =
                                &kp LA(DOT)    &kp LA(N5)     &kp LA(N6)         &kp GRAVE           &kp LS(N1)          &kp NUBS           &kp LS(NUBS)    &kp LS(N0)
-                //
+                //  \              /              {              }                  *                   ?                   (                  )               -              :
                 &kp LS(LA(N7)) &kp LS(N7)     &kp LA(N8)     &kp LA(N9)         &kp LS(RBKT)        &kp LS(MINUS)       &kp LS(N8)         &kp LS(N9)      &kp DE_MINUS   &kp LS(DOT)
-                //
-                               &kp LS(N4)     &kp LA(N7)     &kp LA(N)                                                  &kp LA(N5)         &kp LS(N2)      &kp LS(HASH)
+                //                 $       §      |       `      ~                                                          [         +        "        ;      §
+                               &kp LS(N4)     &kp LA(N7)     &kp LA(N)                                                  &kp LS(N5)         &kp LS(N2)      &kp DE_SINGLE_QUOTE
                 //
                                                              &kp SPACE          &kp ESC             &kp ENTER           &kp SPACE
             >;
