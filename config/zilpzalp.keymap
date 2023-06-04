@@ -11,6 +11,8 @@
 
 #define BULLET LA(LEFT_BRACKET)
 #define DASH LA(SLASH)
+#define DE_Y Z
+#define DE_Z Y
 #define DE_MINUS SLASH
 #define DE_UNDER LS(SLASH)
 
@@ -82,7 +84,7 @@
         };
         combo_z {
             key-positions = <18 19>;
-            bindings = <&kp Y>;
+            bindings = <&kp DE_Z>;
             layers = <PUQ>;
             timeout-ms = <COMBO_TIMEOUT>;
         };
@@ -245,6 +247,16 @@
             bindings = <&kp DOT>, <&kp BULLET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mod_dot_sh_bullet: mod_dot_sh_bullet {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mod_dot_sh_bullet";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            bindings = <&kp>, <&dot_sh_bullet>;
+        }
 /*
         cagm: ctl_alt_gui_morph {
             // I defined CTRL-ALT-GUI shortcuts in BetterTouchTool. Some keys are not recognized
@@ -273,7 +285,7 @@
                 //
                 &mylt NEO3 S   &mylt NEO4 N   &hl LGUI  R    &hl LALT  T        &hl LC(LA(LCMD)) D  &hr RC(RA(RCMD)) O  &hr RALT    A       &hr RGUI  E              &mylt NEO4 I  &mylt NEO3 H
                 //                                                                                                      &cagm DE_UNDER N1 (TODO: is this required?)
-                               &kp        B   &hl LCTRL W    &kp       V                                                &kp DE_UNDER        &hr RCTRL dot_sh_bullet  &kp        Y
+                               &kp        B   &hl LCTRL W    &kp       V                                                &kp DE_UNDER        &dot_sh_bullet RCTRL 0   &kp     DE_Y
                 //
                                                              &hl LSHFT SPACE    &mylt FUNC ESC      &mylt FUNC ENTER    &hr RSHFT   SPACE
             >;
