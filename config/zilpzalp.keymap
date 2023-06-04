@@ -183,6 +183,7 @@
             timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
 
+/* interferes with quickly typing SHIFT+SPACE combination:
         // CAPS WORD
         combo_caps_word {
             key-positions = <24 27>;
@@ -190,6 +191,7 @@
             timeout-ms = <COMBO_TIMEOUT_LONG>;
         };
     };
+*/
 };
 
 
