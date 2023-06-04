@@ -245,16 +245,18 @@
             bindings = <&kp DOT>, <&kp BULLET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+/*
         cagm: ctl_alt_gui_morph {
             // I defined CTRL-ALT-GUI shortcuts in BetterTouchTool. Some keys are not recognized
             // when combined with these modifiers, so we map them to something else.
             compatible = "zmk,behavior-mod-morph";
             label = "CTL_ALT_GUI_MORPH";
-            #binding-cells = <2>;
+            #binding-cells = <2>; <--- wrong!!! - must be <0>
             bindings = <&kp>, <&kp>;
             mods = <(MOD_LCTL|MOD_RCTL) (MOD_LALT|MOD_RALT) (MOD_LGUI|MOD_RGUI)>;
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>; 
         };
+*/
     };
 };
 
