@@ -284,22 +284,22 @@
                 //
                                &kp        M   &kp       L    &kp       C        &hl LC(LCMD)     G  &hr RC(RCMD)     Q  &comma_sh_dash      &kp LC(F13)           &kp        U
                 //
-                &mylt NEO3 S   &mylt NEO4 N   &hl LGUI  R    &hl LALT  T        &hl LC(LA(LCMD)) D  &hr RC(RA(RCMD)) O  &hr RALT    A       &hr RGUI  E           &mylt NEO4 I  &mylt NEO3 H
+                &mylt NEO3 S   &mylt NEO4 N   &hl LGUI  R    &hl LALT  T        &hl LC(LA(LCMD)) D  &hr RC(RA(RCMD)) O  &hr RALT  A         &hr RGUI  E           &mylt NEO4 I  &mylt NEO3 H
                 //                                                                                                      &cagm DE_UNDER N1 (TODO: is this required?)
-                               &kp        B   &hl LCTRL W    &kp       V                                                &kp DE_UNDER        &mod_dot_blt RCTRL 0  &kp     DE_Y
+                               &kp        B   &hl LCTRL W    &kp       V                                                &kp       DE_UNDER  &mod_dot_blt RCTRL 0  &kp     DE_Y
                 //
-                                                             &hl LSHFT SPACE    &mylt FUNC ESC      &mylt FUNC ENTER    &hr RSHFT   SPACE
+                                                             &hl LSHFT SPACE    &mylt FUNC ESC      &mylt FUNC ENTER    &hr RSHFT SPACE
             >;
         };
 
         neo_layer_3 {
             label = "NEO3";
             bindings = <
-                //                 …              [              ]                  ^                   !                   <                  >               =
+                //                 …              [              ]                  ^                   !                   <                  >        &      =
                                &kp LA(DOT)    &kp LA(N5)     &kp LA(N6)         &kp GRAVE           &kp LS(N1)          &kp NUBS           &kp LS(NUBS)    &kp LS(N0)
-                //  \              /              {              }                  *                   ?                   (                  )               -              :
-                &kp LS(LA(N7)) &kp LS(N7)     &kp LA(N8)     &kp LA(N9)         &kp LS(RBKT)        &kp LS(MINUS)       &kp LS(N8)         &kp LS(N9)      &kp DE_MINUS   &kp LS(DOT)
-                //                 $       §      |       `      ~                                                          [         +        "        ;      §
+                //  \              /              {              }                  *                   ?                   (                  )               -                   :
+                &kp LS(LA(N7)) &kp LS(N7)     &kp LA(N8)     &kp LA(N9)         &kp LS(RBKT)        &kp LS(MINUS)       &kp LS(N8)         &kp LS(N9)      &kp DE_MINUS        &kp LS(DOT)
+                //                 $       #      |       `      ~                                                          %         +        "        ;      '
                                &kp LS(N4)     &kp LA(N7)     &kp LA(N)                                                  &kp LS(N5)         &kp LS(N2)      &kp DE_SINGLE_QUOTE
                 //
                                                              &kp SPACE          &kp ESC             &kp ENTER           &kp SPACE
@@ -336,10 +336,3 @@
 
     };
 };
-
-//     __________________________  __________________________
-//    /     1  |  2  |  3  |  4  \/   5 |   6 |   7 |   8    \
-// | 10  | 11  | 12  | 13  | 14  ||  15 |  16 |  17 |  18 | 19  |
-//    \    20  | 21  | 22  |     ||     |  23 |  24 |  25   /
-//                \    26  | 27  /\  28 |  29    /
-//                 --------------  --------------
