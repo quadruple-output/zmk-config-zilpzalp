@@ -7,7 +7,9 @@
 #define NEO4 2
 #define FUNC 3
 
-#define COMBO_TIMEOUT 70
+#define COMBO_TIMEOUT_SHORT 40 // fingers on or above home row
+#define COMBO_TIMEOUT_MEDIUM 70 // fingers below homerow
+#define COMBO_TIMEOUT_LONG 100 // press with fingers of different hands
 
 #define BULLET LA(LEFT_BRACKET)
 #define DASH LA(SLASH)
@@ -62,49 +64,49 @@
             key-positions = <0 1>;
             bindings = <&kp F>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_f_right {
             key-positions = <5 6>;
             bindings = <&kp F>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_p_left {
             key-positions = <1 2>;
             bindings = <&kp P>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_p_right {
             key-positions = <6 7>;
             bindings = <&kp P>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_z {
             key-positions = <18 19>;
             bindings = <&kp DE_Z>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_k {
             key-positions = <22 23>;
             bindings = <&kp K>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_j {
             key-positions = <19 20>;
             bindings = <&kp J>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_x {
             key-positions = <21 22>;
             bindings = <&kp X>;
             layers = <PUQ>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
 
         // Special Characters on NEO3:
@@ -112,31 +114,31 @@
             key-positions = <18 19>;
             bindings = <&kp HASH>;
             layers = <NEO3>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_backtick {
             key-positions = <19 20>;
             bindings = <&kp LS(EQUAL)>;
             layers = <NEO3>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_plus {
             key-positions = <21 22>;
             bindings = <&kp RIGHT_BRACKET>;
             layers = <NEO3>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_ampersand {
             key-positions = <6 7>;
             bindings = <&kp LS(N6)>;
             layers = <NEO3>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_semicolon {
             key-positions = <22 23>;
             bindings = <&kp LS(COMMA)>;
             layers = <NEO3>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
 
         // Missing controls on NEO4:
@@ -144,7 +146,7 @@
             key-positions = <0 1>;
             bindings = <&kp PG_UP>;
             layers = <NEO4>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
 
         // Keypad Operators:
@@ -152,38 +154,38 @@
             key-positions = <22 23>;
             bindings = <&kp KP_MINUS>;
             layers = <NEO4>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_kp_plus {
             key-positions = <15 16>;
             bindings = <&kp KP_PLUS>;
             layers = <NEO4>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_kp_multiply {
             key-positions = <5 6>;
             bindings = <&kp KP_MULTIPLY>;
             layers = <NEO4>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
         combo_kp_divide {
             key-positions = <6 14>;
             bindings = <&kp KP_DIVIDE>;
             layers = <NEO4>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_MEDIUM>;
         };
         combo_kp_dot {
             key-positions = <21 22>;
             bindings = <&kp KP_DOT>;
             layers = <NEO4>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_SHORT>;
         };
 
         // CAPS WORD
         combo_caps_word {
             key-positions = <24 27>;
             bindings = <&caps_word>;
-            timeout-ms = <COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LONG>;
         };
     };
 };
