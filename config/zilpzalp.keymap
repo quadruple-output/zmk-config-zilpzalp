@@ -22,7 +22,7 @@
 
 &caps_word {
     // CTRL-F13 is my umlaut-prefix
-    continue-list = <UNDERSCORE MINUS BSPC F13>;
+    continue-list = <DE_UNDER MINUS BACKSPACE F13>;
 };
 
 / {
