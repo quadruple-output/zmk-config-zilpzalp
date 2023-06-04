@@ -249,7 +249,7 @@
         };
 
         mod_dot_sh_bullet: mod_dot_sh_bullet {
-            compatible = "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-hold-tap";
             label = "mod_dot_sh_bullet";
             #binding-cells = <2>;
             flavor = "balanced";
