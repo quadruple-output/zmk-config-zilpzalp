@@ -248,7 +248,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mod_dot_sh_bullet: mod_dot_sh_bullet {
+        mod_dot_blt: mod_dot_sh_bullet {
             compatible = "zmk,behavior-hold-tap";
             label = "mod_dot_sh_bullet";
             #binding-cells = <2>;
@@ -281,11 +281,11 @@
             label = "PUQ";
             bindings = <
                 //
-                               &kp        M   &kp       L    &kp       C        &hl LC(LCMD)     G  &hr RC(RCMD)     Q  &comma_sh_dash      &kp LC(F13)              &kp        U
+                               &kp        M   &kp       L    &kp       C        &hl LC(LCMD)     G  &hr RC(RCMD)     Q  &comma_sh_dash      &kp LC(F13)           &kp        U
                 //
-                &mylt NEO3 S   &mylt NEO4 N   &hl LGUI  R    &hl LALT  T        &hl LC(LA(LCMD)) D  &hr RC(RA(RCMD)) O  &hr RALT    A       &hr RGUI  E              &mylt NEO4 I  &mylt NEO3 H
+                &mylt NEO3 S   &mylt NEO4 N   &hl LGUI  R    &hl LALT  T        &hl LC(LA(LCMD)) D  &hr RC(RA(RCMD)) O  &hr RALT    A       &hr RGUI  E           &mylt NEO4 I  &mylt NEO3 H
                 //                                                                                                      &cagm DE_UNDER N1 (TODO: is this required?)
-                               &kp        B   &hl LCTRL W    &kp       V                                                &kp DE_UNDER        &dot_sh_bullet RCTRL 0   &kp     DE_Y
+                               &kp        B   &hl LCTRL W    &kp       V                                                &kp DE_UNDER        &mod_dot_blt RCTRL 0  &kp     DE_Y
                 //
                                                              &hl LSHFT SPACE    &mylt FUNC ESC      &mylt FUNC ENTER    &hr RSHFT   SPACE
             >;
