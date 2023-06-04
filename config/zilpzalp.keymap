@@ -10,6 +10,7 @@
 #define COMBO_TIMEOUT 70
 
 #define BULLET LA(LEFT_BRACKET)
+#define DASH LA(SLASH)
 #define DE_MINUS SLASH
 #define DE_UNDER LS(SLASH)
 
@@ -234,7 +235,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_MORPH";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp DE_MINUS>;
+            bindings = <&kp COMMA>, <&kp DASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         dot_sh_bullet: dot_sh_bullet {
