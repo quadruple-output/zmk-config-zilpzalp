@@ -315,7 +315,7 @@
                 //
                                &kp TAB        &hl LCTL INSERT  &kp       ENTER                                            &kp       KP_N1    &hr RCTRL KP_N2  &kp KP_N3
                 //
-                                                               &hl LSHFT SPACE     &kp ESC            &kp ENTER           &hr RSHFT SPACE
+                                                               &hl LSHFT SPACE     &kp ESC            &kp ENTER           &hr RSHFT KP_N0
             >;
         };
 
