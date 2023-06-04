@@ -256,7 +256,7 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <100>;
             bindings = <&kp>, <&dot_sh_bullet>;
-        }
+        };
 /*
         cagm: ctl_alt_gui_morph {
             // I defined CTRL-ALT-GUI shortcuts in BetterTouchTool. Some keys are not recognized
