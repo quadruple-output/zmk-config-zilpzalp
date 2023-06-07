@@ -7,9 +7,9 @@
 #define NEO4 2
 #define FUNC 3
 
-#define COMBO_TIMEOUT_SHORT 40 // fingers on or above home row
-#define COMBO_TIMEOUT_MEDIUM 70 // fingers below homerow
-#define COMBO_TIMEOUT_LONG 100 // press with fingers of different hands
+#define COMBO_TIMEOUT_SHORT 20 // fingers on or above home row
+#define COMBO_TIMEOUT_MEDIUM 28 // fingers below homerow
+#define COMBO_TIMEOUT_LONG 35 // press with fingers of different hands
 
 #define BULLET LA(LEFT_BRACKET)
 #define DASH LA(SLASH)
