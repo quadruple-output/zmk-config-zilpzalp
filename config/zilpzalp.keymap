@@ -290,7 +290,8 @@
                 //                                                                                                      &cagm DE_UNDER N1 (TODO: is this required?)
                                &kp        B   &hl LCTRL W    &kp       V                                                &kp       DE_UNDER  &mod_dot_blt RCTRL 0  &kp     DE_Y
                 //
-                                                             &hl LSHFT SPACE    &mylt FUNC ESC      &mylt FUNC ENTER    &hr RSHFT SPACE
+                                                           //&hl LSHFT SPACE    &mylt FUNC ESC      &mylt FUNC ENTER    &hr RSHFT SPACE
+                                                             &kp SPACE          &mylt FUNC ESC      &mylt FUNC ENTER    &kp SPACE
             >;
         };
 
